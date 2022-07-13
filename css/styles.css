@@ -12,23 +12,18 @@ a,a:hover {
   text-decoration: none !important;
 }
 
-.bg-dark{
-  color: #000 !important;
-  background-color: #000 !important;
-}
-
 h1 {
   padding: 40px;
 }
 
 .link {
   text-decoration: none;
-  color: whitesmoke;
+  color: #DFFF00;
 }
 
 .link:hover {
   text-decoration: none;
-  color: whitesmoke;
+  color: #CECECE;
 }
 
 div {
@@ -44,20 +39,6 @@ div {
   overflow: scroll;
 }
 
-.btnMenu {
-  display: block;
-  padding: 10px 20px 10px 20px;
-  position: relative;
-  background-color: #212529;
-  border-radius: 3px;
-  border-style: inherit;
-}
-
-.btnFondo {
-  border-color: whitesmoke;
-  background-color: #343a41;
-}
-
 .menu__arrow {
   transform: var(--transform);
   transition: transform .5s;
@@ -69,14 +50,14 @@ div {
 }
 
 .menuUp:hover {
-  color: whitesmoke;
+  color: #CECECE;
   --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   --transform: rotate(-180deg);
 }
 
 .menuUp {
-  text-decoration: none;
-  color: whitesmoke;
+  text-decoration: none;  
+  color: #DFFF00;
   padding: 5px 10px 5px 10px;
   /* El tercero modifica la distancia de la linea del texto */
   position: relative;
@@ -86,14 +67,14 @@ div {
 }
 
 .menuUp2:hover {
-  color: whitesmoke;
+  color: #CECECE;
   --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   --transform: rotate(90deg);
 }
 
 .menuUp2 {
   text-decoration: none;
-  color: whitesmoke;
+  color: #DFFF00;
   padding: 5px 30px 5px 0px;
   /* El tercero modifica la distancia de la linea del texto */
   position: relative;
@@ -105,24 +86,23 @@ div {
 
 .subMenu {
   text-decoration: none;
-  color: whitesmoke;
+  color: #DFFF00;
 }
 
 .subMenu:hover {
   text-decoration: none;
-  color: whitesmoke;
-  background-color: #343a41;
+  color: #CECECE;
 }
 
 .subMenuOculto {
   text-decoration: none;
-  color: whitesmoke;
+  color: #CECECE;
   display: none;
 }
 
 .subMenuVisible {
   text-decoration: none;
-  color: whitesmoke;
+  color: #CECECE;
   display: contents;
 }
 
@@ -141,7 +121,7 @@ div {
   /*Donde termina la linea */
   height: 2px;
   /*El ancho de la linea */
-  background: linear-gradient(to right, #9dbec0, #5dd8e0, #0beafa);
+  background: linear-gradient(to right, #d1dd86, #d9ec5a, #DFFF00);
   z-index: 1;
   transform: scaleX(0);
   transform-origin: left;
@@ -162,7 +142,7 @@ div {
   /*Donde termina la linea */
   height: 2px;
   /*El ancho de la linea */
-  background: linear-gradient(to right, #9dbec0, #5dd8e0, #0beafa);
+  background: linear-gradient(to right, #d1dd86, #d9ec5a, #DFFF00);
   z-index: 1;
   transform: scaleX(0);
   transform-origin: left;
@@ -275,19 +255,15 @@ div {
   }
 }
 
-.content {
-  height: 70vh;
-}
-
 .footer-48201 {
-  padding: 7rem 0;
+  padding: 2rem 0;
   background-color: #000;
-  color: #777;
+  color: #DFFF00;  
 }
 
 .footer-48201 .footer-site-logo {
   font-size: 1.5rem;
-  color: #fff;
+  color: #DFFF00;  
 }
 
 .footer-48201 .nav-links li {
@@ -295,11 +271,11 @@ div {
 }
 
 .footer-48201 .nav-links li a {
-  color: gray;
+  color: #DFFF00;  
 }
 
 .footer-48201 .nav-links li a:hover {
-  color: #fff;
+  color: gray;
 }
 
 .footer-48201 .btn.btn-tertiary {
@@ -314,13 +290,13 @@ div {
   display: inline-block;
 }
 
-.footer-48201 .social li a {
-  color: gray;
+.footer-48201 .social li a {  
+  color: #DFFF00;
   padding: 7px;
 }
 
 .footer-48201 .social li a:hover {
-  color: #fff;
+  color: gray;
 }
 
 .footer-48201 .copyright {

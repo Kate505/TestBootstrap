@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="scss/custom.css">
-  
+
 
   <title>Mi Carrera, Mi futuro</title>
 </head>
@@ -36,8 +36,8 @@
       <div class="bg-dark p-3">
 
         <div id="smUni" class="subMenuOculto">
-          <div class="p-3 row row-cols-6 g-lg-2">
-            <div class="col p-1 subMenu"> <a href="#" class="link">UNI</a></div>
+          <div class="p-3 text-center row row-cols-6 g-lg-2">
+            <div class="col p-1 subMenu"> <a href="universidades.html#item-1-1" class="link">UNI</a></div>
             <div class="col p-1 subMenu"> <a href="#" class="link">UCA</a></div>
             <div class="col p-1 subMenu"> <a href="#" class="link">UNAN</a></div>
             <div class="col p-1 subMenu"> <a href="#" class="link">U de M</a></div>
@@ -56,7 +56,6 @@
         </div>
 
         <div id="smCarreras" class="d-flex subMenuOculto">
-
           <div id="smOpciones" class="subMenuOculto">
             <!--Estes es el submenú del menú carreras, donde se muestran las opciones ingenierías, licenciaturas o CT-->
             <div class="p-3 d-flex align-items-start flex-column menu2">
@@ -82,7 +81,7 @@
           <div id="grupo2A" class="flex-grow-1">
 
             <div id="smIngenierias" class="subMenuOculto">
-              <div class="p-3 row row-cols-6 g-lg-2">
+              <div class="p-3 row text-center row-cols-6 g-lg-2">
                 <div class="col p-1 subMenu"> <a href="#" class="link">UNI</a></div>
                 <div class="col p-1 subMenu"> <a href="#" class="link">UCA</a></div>
                 <div class="col p-1 subMenu"> <a href="#" class="link">UNAN</a></div>
@@ -102,7 +101,7 @@
             </div>
 
             <div id="smLicenciaturas" class="subMenuOculto">
-              <div class="p-3 row row-cols-6 g-lg-2">
+              <div class="p-3 text-center row row-cols-6 g-lg-2">
                 <div class="col p-1 subMenu"> <a href="#" class="link">UNI</a></div>
                 <div class="col p-1 subMenu"> <a href="#" class="link">UCA</a></div>
                 <div class="col p-1 subMenu"> <a href="#" class="link">UNAN</a></div>
@@ -117,7 +116,7 @@
             </div>
 
             <div id="smCarrerasTecnicas" class="subMenuOculto">
-              <div class="p-3 row row-cols-6 g-lg-2">
+              <div class="p-3 text-center row row-cols-6 g-lg-2">
                 <div class="col p-1 subMenu"> <a href="#" class="link">UNI</a></div>
                 <div class="col p-1 subMenu"> <a href="#" class="link">UCA</a></div>
                 <div class="col p-1 subMenu"> <a href="#" class="link">UNAN</a></div>
@@ -163,10 +162,10 @@
           </div>
         </div>
 
-        <a class="navbar-brand" style="font-size: 25px; font-weight: bold;">Mi Carrera, Mi Futuro</a>
+        <h1 class="navbar-brand" style="font-size: 25px; font-weight: bold; color: #DFFF00;  ">Mi Carrera, Mi Futuro</h1>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Search">
-          <button class="btn btn-light" type="submit">Buscar</button>
+          <button class="btn btn-secondary" type="submit">Buscar</button>
         </form>
       </div>
     </nav>
@@ -175,10 +174,15 @@
 
   <div id="cuerpo" class="container">
 
-    <h1 class="display-4">¡Tu Carrera...tu Futuro! </h1>
+    <h1 class="display-4">¡Tu Carrera...Tu Futuro! </h1>
+    <p style="font-size:20px;">La elección de una carrera técnica o universitaria es una decisión de suma
+      importancia en nuestras vidas, muchas veces nos cuesta decidir qué carrera estudiar, y es por ello que nosotros te
+      brindamos
+      toda la información que necesitas para ayudarte a elegir.</p>
+    <p></p>
 
     <div class="container" style="padding: 20px 0px 50px 0px;">
-      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -189,18 +193,63 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
-            <img src="img/universidades.jpg" class="d-block w-100" height="450px" alt=“This is a meaningful image
+            <img src="img/universidades.jpg" class="d-block w-100" height="400px" alt=“This is a meaningful image
               description”>
+            <div class="d-none d-md-block">
+              <div class="p-5 text-center">
+                <h4>Carreras y Universidades</h4>
+                <p>Ponemos a tu disposición una lista completa de todas las universidades del país, además
+                  de las carreras que ofrece cada universidad, el perfil de la carrera, y su pénsum académico.</p>
+
+                <div class="p-3 row row-cols-6 justify-content-center">
+                  <div class="col-3 d-grid">
+                    <button class="btn btn-light p-3" style="border-radius: 50px;">Carreras</button>
+                  </div>
+
+                  <div class="col-3 d-grid">
+                    <button class="btn btn-light p-3" style="border-radius: 50px;">Universidades</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="img/carrera.jpg" class="d-block w-100" height="450px" alt=“This is a meaningful image
+            <img src="img/carrera.jpg" class="d-block w-100" height="400px" alt=“This is a meaningful image
               description”>
+            <div class="d-none d-md-block">
+              <div class="p-5 text-center">
+                <h4>Test Vocacional</h4>
+                <p>
+                  Con ayuda de nuestro test vocacional puedes orientarte sobre las carreras que
+                  más se adaptan a tu perfil. El test vocacional CHASIDE permite
+                  evaluar las competencias profesionales de la persona en diferentes ámbitos.
+                </p>
+                <div class="p-3 row justify-content-center">
+                  <div class="col-3 d-grid">
+                    <button class="btn btn-light p-3" style="border-radius: 50px;">Test Vocacional</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="img/test.png" class="d-block w-100" height="450px" alt=“This is a meaningful image description”>
+            <img src="img/test.png" class="d-block w-100" height="400px" alt=“This is a meaningful image description”>
+            <div class="d-none d-md-block">
+              <div class="p-5 text-center">
+                <h5>Test Vocacional Premium</h5>
+                <p>El test vocacional premim es evaluado personalmente por un experto, además de las
+                  respuestas se brinda asesoría personalizada.</p>
+                  <div class="p-3 row justify-content-center">
+                    <div class="col-4 d-grid">
+                      <button class="btn btn-light p-3" style="border-radius: 50px;">Test Vocacional Premium</button>
+                    </div>
+                  </div>
+              </div>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <button class="carousel-control-prev" style="" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
@@ -210,65 +259,6 @@
         </button>
       </div>
     </div>
-
-    <p style="font-size:20px;">La elección de una carrera técnica o universitaria es una decisión de suma
-      importancia en nuestras vidas, muchas veces nos cuesta decidir qué carrera estudiar, y es por ello que nosotros te
-      brindamos
-      toda la información que necesitas para ayudarte a elegir.</p>
-    <p></p>
-
-    <h2 id="list-item-1">Carreras y Universidades</h4>
-      <p></p>
-      <p style="font-size:20px;">Ponemos a tu disposición una lista completa de todas las universidades del país, además
-        de las carreras
-        que ofrece cada universidad, el perfil de la carrera, y su pénsum académico.</p>
-      <div class="p-3 row row-cols-6">
-        <div class="col-3 d-grid">
-          <button class="btn btn-primary">Carreras</button>
-        </div>
-
-        <div class="col-3 d-grid">
-          <button class="btn btn-primary">Universidades</button>
-        </div>
-      </div>
-      <p></p>
-
-      <h2 id="list-item-2">Test Vocacional</h4>
-        <p></p>
-        <p style="font-size:20px;">Con ayuda de nuestro test vocacional puedes orientarte un poco sobre las carreras que
-          más se adaptan a tu perfil. El test vocacional que implementamos es el test CHASIDE, que es un test
-          ampliamente utilizado en
-          la orientación vocacional, que permite diagnosticar las competencias profesionales de la persona en diferentes
-          ámbitos:</p>
-        <ul style="font-size:20px;">
-          <li>C Administrativas y contables.</li>
-          <li>H Humanísticas, ciencias jurídicas y sociales.</li>
-          <li>A Artísticas.</li>
-          <li>S Ciencias de la salud.</li>
-          <li>I Ingenierías, carreras técnicas y computación.</li>
-          <li>D Defensa y seguridad.</li>
-          <li>E Ciencias exactas y agrarias.</li>
-        </ul>
-        <p style="font-size:20px;">Las respuestas del test solo tardan unos segundos en cargar.</p>
-
-        <p style="font-size: 20px;"></p>
-        <div class="p-3 row row-cols-6">
-          <div class="col-3 d-grid">
-            <button class="btn btn-primary">Test Vocacional</button>
-          </div>
-        </div>
-        <p></p>
-
-        <p style="font-size:20px;">El test vocacional premim es evaluado personalmente por un experto, además de las
-          respuestas se brinda
-          asesoría rápida.</p>
-
-        <div class="p-3 row row-cols-6">
-          <div class="col-3 d-grid">
-            <button class="btn btn-primary"><span class="fa-regular fa-crown"></span> Test Vocacional Premium</button>
-          </div>
-        </div>
-        <p></p>
 
   </div>
 
