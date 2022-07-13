@@ -1,3 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap');
+
+a {
+  -webkit-transition: .3s all ease;
+  font-family: 'Comfortaa', cursive;
+  font-size: medium;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+a,a:hover {
+  text-decoration: none !important;
+}
+
+.bg-dark{
+  color: #000 !important;
+  background-color: #000 !important;
+}
+
+h1 {
+  padding: 40px;
+}
+
+.link {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+div {
+  font-family: 'Comfortaa', cursive;
+  font-size: medium;
+}
+
 .hidden {
   overflow: hidden;
 }
@@ -6,53 +44,103 @@
   overflow: scroll;
 }
 
-/* Set the border color */
-
-/* Setting the stroke to green using rgb values (0, 128, 0) */
-
-/*.custom-toggler .navbar-toggler-icon {
-  background-image: url("assets/menu.svg");
-  border-color: #0beafa;
-}*/
-
-.btnMenu{
+.btnMenu {
   display: block;
   padding: 10px 20px 10px 20px;
   position: relative;
   background-color: #212529;
   border-radius: 3px;
-  border-style: inherit;  
+  border-style: inherit;
 }
 
-.btnMenu:hover{
+.btnFondo {
   border-color: whitesmoke;
-  background-color:#343a41;
+  background-color: #343a41;
 }
 
-.menuUpHover:hover{
+.menu__arrow {
+  transform: var(--transform);
+  transition: transform .5s;
+}
+
+.arrow {
+  --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+  --transform: rotate(90deg);
+}
+
+.menuUp:hover {
   color: whitesmoke;
+  --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  --transform: rotate(-180deg);
 }
 
-.menuUp{
+.menuUp {
   text-decoration: none;
   color: whitesmoke;
-  padding: 5px 30px 5px 30px;   /* El tercero modifica la distancia de la linea del texto */
+  padding: 5px 10px 5px 10px;
+  /* El tercero modifica la distancia de la linea del texto */
   position: relative;
   display: block;
+  --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+  --transform: scale(100%);
+}
 
+.menuUp2:hover {
+  color: whitesmoke;
+  --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  --transform: rotate(90deg);
+}
+
+.menuUp2 {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 5px 30px 5px 0px;
+  /* El tercero modifica la distancia de la linea del texto */
+  position: relative;
+  display: block;
+  transform: scale();
+  --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+  --transform: rotate(0deg);
+}
+
+.subMenu {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.subMenu:hover {
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: #343a41;
+}
+
+.subMenuOculto {
+  text-decoration: none;
+  color: whitesmoke;
+  display: none;
+}
+
+.subMenuVisible {
+  text-decoration: none;
+  color: whitesmoke;
+  display: contents;
 }
 
 .menu {
-  /*display: flex;  */
+  display: flex;
+  justify-content: center;
 }
 
 .menu a::before {
   content: '';
   position: absolute;
-  bottom: 0px;
-  left: 25px;   /*Donde inicia la linea */
-  width: 120px; /*Donde termina la linea */
-  height: 2px;  /*El ancho de la linea */
+  bottom: 0;
+  left: 0;
+  /*Donde inicia la linea */
+  width: 100%;
+  /*Donde termina la linea */
+  height: 2px;
+  /*El ancho de la linea */
   background: linear-gradient(to right, #9dbec0, #5dd8e0, #0beafa);
   z-index: 1;
   transform: scaleX(0);
@@ -61,6 +149,27 @@
 }
 
 .menu a:hover::before {
+  transform: scaleX(1);
+}
+
+.menu2 a::before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  /*Donde inicia la linea */
+  width: 140px;
+  /*Donde termina la linea */
+  height: 2px;
+  /*El ancho de la linea */
+  background: linear-gradient(to right, #9dbec0, #5dd8e0, #0beafa);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu2 a:hover::before {
   transform: scaleX(1);
 }
 
@@ -79,7 +188,7 @@
   padding: 16px;
 }
 
-.imagenes{
+.imagenes {
   max-width: 75%;
   height: 100px;
 }
@@ -164,4 +273,56 @@
   50% {
     opacity: 0.5;
   }
+}
+
+.content {
+  height: 70vh;
+}
+
+.footer-48201 {
+  padding: 7rem 0;
+  background-color: #000;
+  color: #777;
+}
+
+.footer-48201 .footer-site-logo {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.footer-48201 .nav-links li {
+  margin-bottom: 10px;
+}
+
+.footer-48201 .nav-links li a {
+  color: gray;
+}
+
+.footer-48201 .nav-links li a:hover {
+  color: #fff;
+}
+
+.footer-48201 .btn.btn-tertiary {
+  background-color: #e42c64;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 20px;
+}
+
+.footer-48201 .social li {
+  display: inline-block;
+}
+
+.footer-48201 .social li a {
+  color: gray;
+  padding: 7px;
+}
+
+.footer-48201 .social li a:hover {
+  color: #fff;
+}
+
+.footer-48201 .copyright {
+  border-top: 1px solid #404040;
 }
