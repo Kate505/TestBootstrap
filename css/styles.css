@@ -1,0 +1,167 @@
+.hidden {
+  overflow: hidden;
+}
+
+.visible {
+  overflow: scroll;
+}
+
+/* Set the border color */
+
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+
+/*.custom-toggler .navbar-toggler-icon {
+  background-image: url("assets/menu.svg");
+  border-color: #0beafa;
+}*/
+
+.btnMenu{
+  display: block;
+  padding: 10px 20px 10px 20px;
+  position: relative;
+  background-color: #212529;
+  border-radius: 3px;
+  border-style: inherit;  
+}
+
+.btnMenu:hover{
+  border-color: whitesmoke;
+  background-color:#343a41;
+}
+
+.menuUpHover:hover{
+  color: whitesmoke;
+}
+
+.menuUp{
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 5px 30px 5px 30px;   /* El tercero modifica la distancia de la linea del texto */
+  position: relative;
+  display: block;
+
+}
+
+.menu {
+  /*display: flex;  */
+}
+
+.menu a::before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 25px;   /*Donde inicia la linea */
+  width: 120px; /*Donde termina la linea */
+  height: 2px;  /*El ancho de la linea */
+  background: linear-gradient(to right, #9dbec0, #5dd8e0, #0beafa);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu a:hover::before {
+  transform: scaleX(1);
+}
+
+
+.centrado {
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+.imagenes{
+  max-width: 75%;
+  height: 100px;
+}
+
+.lds-grid {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-grid div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #cef;
+  animation: lds-grid 1.2s linear infinite;
+}
+
+.lds-grid div:nth-child(1) {
+  top: 8px;
+  left: 8px;
+  animation-delay: 0s;
+}
+
+.lds-grid div:nth-child(2) {
+  top: 8px;
+  left: 32px;
+  animation-delay: -0.4s;
+}
+
+.lds-grid div:nth-child(3) {
+  top: 8px;
+  left: 56px;
+  animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(4) {
+  top: 32px;
+  left: 8px;
+  animation-delay: -0.4s;
+}
+
+.lds-grid div:nth-child(5) {
+  top: 32px;
+  left: 32px;
+  animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(6) {
+  top: 32px;
+  left: 56px;
+  animation-delay: -1.2s;
+}
+
+.lds-grid div:nth-child(7) {
+  top: 56px;
+  left: 8px;
+  animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(8) {
+  top: 56px;
+  left: 32px;
+  animation-delay: -1.2s;
+}
+
+.lds-grid div:nth-child(9) {
+  top: 56px;
+  left: 56px;
+  animation-delay: -1.6s;
+}
+
+@keyframes lds-grid {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
