@@ -13,6 +13,7 @@ var smInge = document.getElementById("smIngenierias");
 var smLic = document.getElementById("smLicenciaturas");
 var smCT = document.getElementById("smCarrerasTecnicas");
 var smTest = document.getElementById("smTest");
+var piedePagina = document.getElementById("footer");
 
 /* preloader*/
 window.onload = function () {
@@ -28,6 +29,7 @@ var bsCollapse = new bootstrap.Collapse(menuCollapse, {
 cuerpo.addEventListener("mouseover", function (event) {
     bsCollapse.hide();
 }, false);
+
 
 
 /*Submenús collapsables de la navbar */
