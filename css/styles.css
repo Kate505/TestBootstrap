@@ -11,7 +11,7 @@ a,a:hover {
 }
 
 h1 {
-  padding: 40px;
+  padding: 2.5rem;
 }
 
 .link {
@@ -52,9 +52,8 @@ div {
 }
 
 .menuUp {
-  text-decoration: none;  
   color: #DFFF00;
-  padding: 5px 10px 5px 10px;
+  padding: 0.313rem 0.625rem 0.313rem 0.625rem;
   /* El tercero modifica la distancia de la linea del texto */
   position: relative;
   display: block;
@@ -71,7 +70,7 @@ div {
 .menuUp2 {
   text-decoration: none;
   color: #DFFF00;
-  /*padding: 5px 10px 5px 0px;*/
+  /*padding: 0.313rem 0.625rem 0.313rem 0rem;*/
   /* El tercero modifica la distancia de la linea del texto */
   position: relative;
   display: block;
@@ -81,23 +80,19 @@ div {
 }
 
 .subMenu {
-  text-decoration: none;
   color: #DFFF00;
 }
 
 .subMenu:hover {
-  text-decoration: none;
   color: #CECECE;
 }
 
 .subMenuOculto {
-  text-decoration: none;
   color: #CECECE;
   display: none;
 }
 
 .subMenuVisible {
-  text-decoration: none;
   color: #CECECE;
   display: contents;
 }
@@ -115,7 +110,7 @@ div {
   /*Donde inicia la linea */
   width: 100%;
   /*Donde termina la linea */
-  height: 2px;
+  height: 0.125rem;
   /*El ancho de la linea */
   background: linear-gradient(to right, #d1dd86, #d9ec5a, #DFFF00);
   z-index: 1;
@@ -125,7 +120,7 @@ div {
 }
 
 .menu2{
-  padding-right: 10px;
+  padding-right: 0.625rem;
 }
 
 .menu a:hover::before {
@@ -135,12 +130,12 @@ div {
 .menu2 a::before {
   content: '';
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  bottom: 0rem;
+  left: 0rem;
   /*Donde inicia la linea */
-  width: 140px;
+  width: 8.75rem;
   /*Donde termina la linea */
-  height: 2px;
+  height: 0.125rem;
   /*El ancho de la linea */
   background: linear-gradient(to right, #d1dd86, #d9ec5a, #DFFF00);
   z-index: 1;
@@ -165,81 +160,81 @@ div {
 
 /* Page content */
 .content {
-  padding: 16px;
+  padding: 1rem;
 }
 
 .imagenes {
   max-width: 75%;
-  height: 100px;
+  height: 6.25rem;
 }
 
 .lds-grid {
   display: inline-block;
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
 }
 
 .lds-grid div {
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   background: #cef;
   animation: lds-grid 1.2s linear infinite;
 }
 
 .lds-grid div:nth-child(1) {
-  top: 8px;
-  left: 8px;
+  top: 0.5rem;
+  left: 0.5rem;
   animation-delay: 0s;
 }
 
 .lds-grid div:nth-child(2) {
-  top: 8px;
-  left: 32px;
+  top: 0.5rem;
+  left: 30.125rem;
   animation-delay: -0.4s;
 }
 
 .lds-grid div:nth-child(3) {
-  top: 8px;
-  left: 56px;
+  top: 0.5rem;
+  left: 3.5rem;
   animation-delay: -0.8s;
 }
 
 .lds-grid div:nth-child(4) {
-  top: 32px;
-  left: 8px;
+  top: 30.125rem;
+  left: 0.5rem;
   animation-delay: -0.4s;
 }
 
 .lds-grid div:nth-child(5) {
-  top: 32px;
-  left: 32px;
+  top: 30.125rem;
+  left: 30.125rem;
   animation-delay: -0.8s;
 }
 
 .lds-grid div:nth-child(6) {
-  top: 32px;
-  left: 56px;
+  top: 30.125rem;
+  left: 3.5rem;
   animation-delay: -1.2s;
 }
 
 .lds-grid div:nth-child(7) {
-  top: 56px;
-  left: 8px;
+  top: 3.5rem;
+  left: 0.5rem;
   animation-delay: -0.8s;
 }
 
 .lds-grid div:nth-child(8) {
-  top: 56px;
-  left: 32px;
+  top: 3.5rem;
+  left: 30.125rem;
   animation-delay: -1.2s;
 }
 
 .lds-grid div:nth-child(9) {
-  top: 56px;
-  left: 56px;
+  top: 3.5rem;
+  left: 3.5rem;
   animation-delay: -1.6s;
 }
 
@@ -267,7 +262,7 @@ div {
 }
 
 .footer-48201 .nav-links li {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .footer-48201 .nav-links li a {
@@ -281,9 +276,9 @@ div {
 .footer-48201 .btn.btn-tertiary {
   background-color: #e42c64;
   color: #fff;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   border: none;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
 }
 
 .footer-48201 .social li {
@@ -292,7 +287,7 @@ div {
 
 .footer-48201 .social li a {  
   color: #DFFF00;
-  padding: 7px;
+  padding: 0.438rem;
 }
 
 .footer-48201 .social li a:hover {
@@ -300,5 +295,5 @@ div {
 }
 
 .footer-48201 .copyright {
-  border-top: 1px solid #404040;
+  border-top: 0.063rem solid #404040;
 }
