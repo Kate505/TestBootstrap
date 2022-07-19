@@ -10,6 +10,10 @@ a,a:hover {
   text-decoration: none !important;
 }
 
+.justify{
+  text-align: justify;
+}
+
 h1 {
   padding: 2.5rem;
 }
