@@ -20,10 +20,12 @@ h1 {
 
 .link {
   color: #DFFF00; 
+  font-size: medium;
 }
 
 .link:hover {
   color: #CECECE;
+  font-size: medium;
 }
 
 div {
