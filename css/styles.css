@@ -44,11 +44,6 @@ div {
   transition: transform .5s;
 }
 
-.arrow {
-  --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
-  --transform: rotate(90deg);
-}
-
 .menuUp:hover {
   color: #CECECE;
   --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -92,12 +87,10 @@ div {
 }
 
 .subMenuOculto {
-  color: #CECECE;
   display: none;
 }
 
 .subMenuVisible {
-  color: #CECECE;
   display: contents;
 }
 
